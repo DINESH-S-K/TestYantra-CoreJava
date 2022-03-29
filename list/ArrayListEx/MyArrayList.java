@@ -51,12 +51,26 @@ public class MyArrayList {
 
 	}
 
-	public void remove(int index) {
-		for (int i = 0; i < size; i++) {
-           if(i>=index) {
-        	   array[i] = array[i+1];
-           }
+		public void remove(int index) {
+		for (int i = 0; i < size - 1; i++) {
+			if (i >= index) {
+				array[i] = array[i + 1];
+			}
+		}
+		finalCapacity();
+	}
+
+	private void finalCapacity() {
+		int length = size - 1;
+		temp = new Object[length];
+		for (int i = 0; i < length; i++) {
+			temp[i] = array[i];
 		}
 	}
 
+	public void print1() {
+		for (int i = 0; i < temp.length; i++) {
+			System.out.print(temp[i] + " ");
+		}
+	}
 }
