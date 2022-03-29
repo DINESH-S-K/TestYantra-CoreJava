@@ -22,9 +22,5 @@ public class CompareToInString implements Comparable<CompareToInString> {
 	public int compareTo(CompareToInString o) {
 		return this.name.compareTo(o.name);
 	}
-//		@Override
-//		public ArrayList remove(int index) {
-//			for(int i =0; i < )
-//		}
 
 }
