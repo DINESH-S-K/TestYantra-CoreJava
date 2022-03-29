@@ -12,7 +12,7 @@ public class MyArrayListMain {
         System.out.println(myArrayList.position(1));
      	
      	myArrayList.remove(3);
-     	myArrayList.print();
+     	myArrayList.print1();
 	}
 	
 }
